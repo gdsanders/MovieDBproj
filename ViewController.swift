@@ -18,13 +18,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var posterImageView: UIImageView!
     
     
-    
+    let dataRecord = (title: "Midnight Run", director: "Martin Brest", writer: "George Gallo", studio: "Universal Studios", rated: "R", year: "1988")
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        titleLabel.text = ""
+        directorLabel.text = ""
+        writerLabel.text = ""
+        studioLabel.text = ""
+        ratedLabel.text = ""
+        posterImageView.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +40,14 @@ class ViewController: UIViewController {
     
 
     @IBAction func retrieveDataButtonPressed(sender: UIButton) {
+        posterImageView.hidden = false
+        
+        titleLabel.text = "\(dataRecord.title) \(dataRecord.year)"
+        directorLabel.text = "\(dataRecord.director)"
+        writerLabel.text = "\(dataRecord.writer)"
+        studioLabel.text = "\(dataRecord.studio)"
+        ratedLabel.text = "\(dataRecord.rated)"
+        
         
     }
 
