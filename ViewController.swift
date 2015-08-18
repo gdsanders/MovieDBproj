@@ -9,6 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var directorLabel: UILabel!
+    @IBOutlet weak var writerLabel: UILabel!
+    @IBOutlet weak var studioLabel: UILabel!
+    @IBOutlet weak var ratedLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +31,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
+    @IBAction func retrieveDataButtonPressed(sender: UIButton) {
+        
+    }
 
 }
 

@@ -31,13 +31,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midnightRun" translatesAutoresizingMaskIntoConstraints="NO" id="FOM-n1-MNC">
                                 <rect key="frame" x="20" y="104" width="208" height="286"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Retrieve data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2w-yf-48H">
-                                <rect key="frame" x="20" y="409" width="208" height="34"/>
-                                <color key="backgroundColor" red="0.076753797920000005" green="0.19212334549999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Director" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTy-1b-WQo">
                                 <rect key="frame" x="253" y="175" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,9 +85,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-wM-jD5">
+                                <rect key="frame" x="20" y="406" width="208" height="40"/>
+                                <color key="backgroundColor" red="0.076753797920000005" green="0.19212334549999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Retrieve Data">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retrieveDataButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53z-v2-A2p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.84883794067607932" blue="0.71571930678816231" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="directorLabel" destination="e7e-Jn-N5Q" id="KLe-6E-MJw"/>
+                        <outlet property="posterImageView" destination="FOM-n1-MNC" id="JMC-Bc-tMf"/>
+                        <outlet property="ratedLabel" destination="i3T-gC-Rxn" id="KIg-Kt-pta"/>
+                        <outlet property="studioLabel" destination="E5P-Vt-kw5" id="UuP-Hh-bjF"/>
+                        <outlet property="titleLabel" destination="OT8-Zu-8vV" id="sgu-iw-I4U"/>
+                        <outlet property="writerLabel" destination="qe7-f9-ETJ" id="PIm-RQ-2DZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
